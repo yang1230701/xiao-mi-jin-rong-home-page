@@ -1,0 +1,399 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "HanHei SC","PingFang SC","Avenir Next",Avenir,"Helvetica Neue",Helvetica,"Lantinghei SC","Hiragino Sans GB","Microsoft YaHei",微软雅黑,STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-size: 12px;
+}
+
+/* 头部区 */
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+nav {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+.nav-left {
+    width: 356.1px;
+    float: left;
+}
+.nav-left ul {
+    overflow: hidden;
+}
+.nav-left li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: rgb(196, 189, 189);
+}
+.split {
+    margin: 0 6px;
+    color: white;
+}
+.nav-right {
+    width: 66px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+#split-a {
+    margin: 0 1.5px;
+    color: white;
+}
+/* logo区 */
+.logo-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+.logo-left {
+    float: left;
+    padding: 23px 0;
+}
+.logo-nav {
+    float: right;
+    list-style-type: none;
+    margin: 37px -23px 0 0;
+}
+.logo-nav>li {
+    float: left;
+    padding: 0 23px;
+}
+.logo-list {
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+}
+.logo-list:hover {
+    color: tomato;
+}
+.logo-sub-list ul {
+    list-style-type: none;
+}
+.logo-par {
+    position: relative;
+}
+.logo-sub-list {
+    display: none;
+    width: 210px;
+    height: 155px;
+    position: absolute;
+    top: 21px;
+    left: -66px;
+    padding: 20px 30px;
+}
+.logo-sub-list ul {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    border: 1px solid #E5E5E5;
+    padding: 10px 0px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.logo-sub-list ul li {
+    height: 40px;
+    line-height: 40px;
+}
+.logo-sub-list ul li a{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #434343;
+    text-decoration: none;
+}
+.logo-sub-list ul li a:hover {
+    background-color: #E5E5E5;
+    color: tomato;
+}
+.logo-sub-list::before {
+    /*相对定位 
+    content: "";
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #e5e5e5;
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background: #fff;
+    z-index: 2; */
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 99px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #e5e5e5;
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background: #fff;
+    z-index: 2;
+}
+.logo-par:hover .logo-sub-list {
+    display: block;
+}
+/* banner 区 */
+.banner {
+    height: 640px;
+    position: relative;
+    padding-top: 193px;
+    background-image: url("https://fundres.mipay.com/res/pc/images/index_banner-744e8a4eb7.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slogan {
+    font-size: 54px;
+    color: #FFFFFF;
+    line-height: 54px;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+.slogan-box {
+    text-align: center;
+}
+.slogan+a {
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    font-size: 24px;
+    background-color: #f93f2b;
+    color: #FFFFFF;
+    width: 262px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/* content区 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 430px;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+    padding: 30px 30px 0px;
+}
+/* 第一列样式 */
+.content-a,.content-b,.content-c {
+    float: left;
+    width: 33.3%;
+}
+.content a {
+    display: block;
+    text-decoration: none;
+}
+.avatar-a {
+    background: url("https://fundres.mipay.com/res/pc/images/index_lc-4d441bbd19.png") no-repeat center center;
+    width: 360px;
+    height: 180px;
+    padding: 30px;
+}
+.avatar-a p {
+    color: #FFFFFF;
+    font-size: 33px;
+}
+.t {
+    padding: 18px 0 0 0;
+    line-height: 33px;
+}
+.d {
+    padding: 16px 0 0 0;
+    line-height: 33px;
+    font-weight: 300;
+}
+.a-list {
+    width: 360px;
+    padding: 10px 30px;
+}
+.item {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 16px;
+}
+.item>span {
+    color: #ea5600;
+    padding-right: 18px;
+    font-size: 16px;
+    position: relative;
+}
+
+.item span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    width: 1px;
+    height: 13px;
+    background-color: #979797;
+}
+.link-more {
+    margin: 40px 0px 10px 0px;
+    text-align: center;
+    height: 62px;
+    line-height: 62px;
+    border-top: 1px solid #ECECEC;
+}
+.link-more span {
+    font-size: 16px;
+    color: #fd3911;
+}
+.link-more span::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    right: -3px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(https://fundres.mipay.com/res/pc/images/icn_right-63e3c49bc1.png);
+}
+/* 第二列样式 */
+.avatar-b {
+    background: url("https://fundres.mipay.com/res/pc/images/index_dk@2x-1a717ad295.png") no-repeat center center;
+    width: 360px;
+    height: 180px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.avatar-b p {
+    color: #FFFFFF;
+    font-size: 33px;
+}
+.content-b .b-list{
+    margin: 0 auto;
+}
+.content-b .item>span {
+    color: #4481c8;
+    padding-right: 18px;
+    font-size: 16px;
+    position: relative;
+}
+/* 第三列样式 */
+.avatar-c {
+    background: url("https://fundres.mipay.com/res/pc/images/index_bx-77769fa5cb.png") no-repeat center center;
+    width: 360px;
+    height: 180px;
+    padding: 30px;
+    position: relative;
+    left: 20px;
+}
+.avatar-c p {
+    color: #FFFFFF;
+    font-size: 33px;
+}
+.content-c .item>span {
+    color: #0db27b;
+    padding-right: 18px;
+    font-size: 16px;
+    position: relative;
+}
+.content-c .c-list {
+    position: relative;
+    left: 20px;
+}
+/* 底部版权区 */
+footer {
+    width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+}
+.footer-left {
+    padding-top: 57px;
+    float: left;
+}
+.footer-left img {
+    float: left;
+    margin-right: 16px;
+}
+.footer-left-message {
+    float: left;
+}
+.footer-left-message ul {
+    overflow: hidden;
+}
+.footer-left a {
+    text-decoration: none;
+    color: #575757;
+    font-size: 14px;
+    display: block;
+    height: 14px;
+    line-height: 14px;
+}
+.footer-left li {
+    list-style-type: none;
+    float: left;
+}
+.footer-list-a li:first-child {
+    padding: 0 8px 0 0;
+}
+.footer-list-a {
+    padding: 3px 0 7px 0;
+}
+.footer-list-b {
+    padding: 3px 0px;
+}
+.footer-list-a li {
+    padding: 0 8px;
+    border-right: 1px solid #575757;
+}
+.footer-list-a li:last-child {
+    border: none;
+}
+.footer-list-b li {
+    height: 14px;
+    line-height: 14px;
+    color: #6d6d6d;
+    padding: 0 8px;
+    border-right: 1px solid #6d6d6d;
+}
+.footer-list-b li:first-child {
+    padding: 0 8px 0 0;
+}
+.footer-list-b li:last-child {
+    border: none;
+}
+.footer-right {
+    float: right;
+    padding-top: 42px;
+}
+.call {
+    font-size: 14px;
+    color: #575757;
+    line-height: 20px;
+}
+.tel {
+    color: #e84519;
+    font-size: 26px;
+    line-height: 37px;
+    font-weight: 400;
+}
+.dec {
+    color: #575757;
+}
